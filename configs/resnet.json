@@ -3,14 +3,14 @@
         "architecture":         "ResNet50",
         "input_size":           288,
         "anchors":              [0.57273, 0.677385, 1.87446, 2.06253, 3.33843, 5.47434, 7.88282, 3.52778, 9.77052, 9.16828],
-        "labels":               ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        "labels":               ["digit"]
     },
     "pretrained" : {
         "feature":   			"",
-        "full":   				"resnet//weights.h5"
+        "full":   				""
     },
     "train" : {
-    	"warmup_epoch": 		0,
+    	"warmup_epoch": 		3,
         "actual_epoch":         25,
         "train_image_folder":   "..//dataset//svhn//train_imgs//",
         "train_annot_folder":   "train_voc_anns//",
@@ -22,6 +22,6 @@
         "learning_rate":        1e-4,
         "saved_folder":   		"resnet",
         "jitter":				true,
-        "is_only_detect" : 		false
+        "is_only_detect" : 		true
     }
 }
