@@ -16,7 +16,7 @@ argparser = argparse.ArgumentParser(
 argparser.add_argument(
     '-c',
     '--conf',
-    default="configs//config.json",
+    default="configs//resnet.json",
     help='path to configuration file')
 
 def setup_training(config_file):
