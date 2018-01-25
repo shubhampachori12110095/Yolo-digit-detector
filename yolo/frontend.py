@@ -128,6 +128,8 @@ class YOLO(object):
                 nb_epoch           = nb_epoch,
                 saved_weights_name = saved_weights_name)
 
+        model.save_weights("final.h5")
+
     def _get_loss_func(self,
                       batch_size,
                       warmup_epochs,
