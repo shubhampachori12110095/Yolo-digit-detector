@@ -29,6 +29,8 @@ def create_yolo(architecture,
                          anchors)
     yolo_decoder = YoloDecoder(anchors)
     yolo = YOLO(yolo_network, yolo_loss, yolo_decoder, labels, input_size)
+    yolo._yolo_network._model.layers[1].trainable=False
+    
     return yolo
 
 
