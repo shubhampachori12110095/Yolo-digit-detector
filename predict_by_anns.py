@@ -9,8 +9,8 @@ import os
 import yolo
 
 
-DEFAULT_CONFIG_FILE = "config.json"
-DEFAULT_WEIGHT_FILE = os.path.join(yolo.PROJECT_ROOT, "test_svhn_recognizer", "weights.h5")
+DEFAULT_CONFIG_FILE = "configs//resnet.json"
+DEFAULT_WEIGHT_FILE = os.path.join(yolo.PROJECT_ROOT, "resnet", "weights.h5")
 DEFAULT_THRESHOLD = 0.4
 
 argparser = argparse.ArgumentParser(
