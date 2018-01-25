@@ -3,20 +3,20 @@
         "architecture":         "ResNet50",
         "input_size":           288,
         "anchors":              [0.57273, 0.677385, 1.87446, 2.06253, 3.33843, 5.47434, 7.88282, 3.52778, 9.77052, 9.16828],
-        "labels":               ["1", "2", "3", "9"]
+        "labels":               ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     },
     "pretrained" : {
         "feature":   			"",
         "full":   				""
     },
     "train" : {
-    	"warmup_epoch": 		2,
+    	"warmup_epoch": 		3,
         "actual_epoch":         25,
-        "train_image_folder":   "tests//dataset//svhn//imgs/",
-        "train_annot_folder":   "tests//dataset//svhn//anns/",
-        "train_times":          10,
-        "valid_image_folder":   "tests//dataset//svhn//imgs/",
-        "valid_annot_folder":   "tests//dataset//svhn//anns/",
+        "train_image_folder":   "..//dataset//svhn//train_imgs//",
+        "train_annot_folder":   "train_voc_anns//",
+        "train_times":          1,
+        "valid_image_folder":   "..//dataset//svhn//train_imgs//",
+        "valid_annot_folder":   "train_voc_anns//",
         "valid_times":          1,
         "batch_size":           2,
         "learning_rate":        1e-4,
