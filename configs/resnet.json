@@ -19,7 +19,7 @@
         "valid_annot_folder":   "valid_voc_anns//",
         "valid_times":          1,
         "batch_size":           10,
-        "learning_rate":        1e-5,
+        "learning_rate":        1e-4,
         "saved_folder":   		"resnet",
         "jitter":				false,
         "is_only_detect" : 		false
