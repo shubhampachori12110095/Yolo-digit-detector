@@ -66,7 +66,7 @@ class YoloLoss(object):
             """
             Finalize the loss
             """
-            loss = get_loss(coord_mask, conf_mask, class_mask, pred_tensor, true_box_xy, true_box_wh, true_box_conf, true_box_class)
+            loss = get_loss(coord_mask, conf_mask, class_mask, pred_tensor, true_box_xy, true_box_wh, true_box_conf, true_box_class) / batch_size
             return loss
         return loss_func
 
